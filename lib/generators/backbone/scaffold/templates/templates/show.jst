@@ -1,9 +1,9 @@
-<% attributes.each do |attribute| -%>
-<p>
-  <b><%= attribute.human_name %>:</b>
-  <%%= <%= attribute.name %> %>
-</p>
+<dl class="dl-horizontal">
+  <% attributes.each do |attribute| -%>
+  <dt><%= attribute.human_name %></dt>
+  <dd><%%= <%= attribute.name %> %></dd>
+  <% end -%>
+</dl>
 
-<% end -%>
 
-<a href="#/index">Back</a>
+<a href="#/index" class='btn btn-inverse'>Back</a>

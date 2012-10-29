@@ -1,16 +1,15 @@
 <h1>Listing <%= plural_table_name %></h1>
+<br/>
 
-<table id="<%= plural_name %>-table">
+<table id="<%= plural_name %>-table" class="table table-bordered">
   <tr>
 <% attributes.each do |attribute| -%>
     <th><%= attribute.human_name %></th>
 <% end -%>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 </table>
 
 <br/>
 
-<a href="#/new">New <%= human_name %></a>
+<a href="#/new" class="btn btn-success"><i class='icon-plus'></i>  New <%= human_name %></a>
